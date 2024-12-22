@@ -1,0 +1,98 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.timer {
+    font-weight: bold;
+    color: #ff4d4f;
+}
+
+.questionList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questionCard {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.questionTitle {
+    margin: 0;
+    font-size: 18px;
+}
+
+.pointValue {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.difficulty {
+    font-size: 14px;
+    color: #666;
+}
+
+.questionText {
+    margin-bottom: 15px;
+}
+
+.mediaContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Để media tự xuống dòng nếu không đủ chỗ */
+}
+
+.answerList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.submitButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.errorMessage {
+    color: #ff4d4f;
+    text-align: center;
+}

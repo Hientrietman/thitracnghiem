@@ -1,0 +1,22 @@
+.siteLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.siteLayoutContent {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px; /* Chiều rộng cố định cho Sidebar */
+    flex-shrink: 0; /* Đảm bảo Sidebar không co lại khi không gian thay đổi */
+}
+
+.contentContainer {
+    flex: 1; /* Phần này sẽ chiếm phần còn lại sau Sidebar */
+    padding: 16px; /* Thêm padding cho nội dung nếu cần */
+    background-color: #F2F9FF; /* Ví dụ màu nền */
+    overflow-y: auto; /* Đảm bảo nội dung có thể cuộn nếu vượt quá chiều cao */
+}

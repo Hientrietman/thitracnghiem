@@ -1,0 +1,77 @@
+# ------------------------------
+# General
+# ------------------------------
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------
+# Frontend: thitracnghiem-frontend
+# ------------------------------
+/thitracnghiem-frontend/node_modules/
+/thitracnghiem-frontend/dist/
+
+/thitracnghiem-frontend/.vite/
+/thitracnghiem-frontend/*.local
+
+# Environment variables
+/thitracnghiem-frontend/.env
+/thitracnghiem-frontend/.env.*.local
+
+# ------------------------------
+# Backend: thitracnghiem-backend
+# ------------------------------
+/thitracnghiem-backend/target/
+/thitracnghiem-backend/out/
+/thitracnghiem-backend/bin/
+/thitracnghiem-backend/build/
+
+# Gradle
+/thitracnghiem-backend/.gradle/
+/thitracnghiem-backend/build/
+/thitracnghiem-backend/gradle/
+/thitracnghiem-backend/gradle-wrapper.jar
+
+# Maven
+/thitracnghiem-backend/.mvn/
+/thitracnghiem-backend/mvnw
+/thitracnghiem-backend/mvnw.cmd
+/thitracnghiem-backend/pom.xml.tag
+/thitracnghiem-backend/pom.xml.releaseBackup
+/thitracnghiem-backend/pom.xml.versionsBackup
+
+# Environment variables
+/thitracnghiem-backend/.env
+
+# Uploads folder
+/thitracnghiem-backend/uploads/
+
+# Lombok generated logs
+.lombok/
+
+# ------------------------------
+# Miscellaneous
+# ------------------------------
+# OS-generated files
+*.bak
+*.swp
+*.tmp
+*.class
+*.war
+*.jar
+*.ear
+
+# End of file

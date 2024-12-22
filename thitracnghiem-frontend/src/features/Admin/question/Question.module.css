@@ -1,0 +1,43 @@
+/* Question.module.css */
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textandinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input {
+  width: 50px;
+
+  text-align: center;
+}
+
+.questionList {
+  margin-top: 20px;
+}
+
+.questionItem {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.questionItem h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.questionItem ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.questionItem li {
+  margin: 5px 0;
+}

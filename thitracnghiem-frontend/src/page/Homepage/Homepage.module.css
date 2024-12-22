@@ -1,0 +1,81 @@
+/* Tổng quan container */
+/* Tổng quan container */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Đảm bảo chiều cao toàn màn hình */
+    width: 100%; /* Đảm bảo chiều rộng toàn màn hình */
+    overflow: hidden; /* Ẩn nội dung vượt ra ngoài */
+}
+
+/* Bên trái - chứa hình ảnh */
+.imageContainer {
+    flex: 2; /* Phần này sẽ chiếm 50% màn hình (1 phần trong tổng số 2 phần) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Đảm bảo không có cuộn */
+    position: relative;
+}
+
+.image {
+    width: 100%; /* Hình ảnh tràn chiều ngang */
+    height: 100%; /* Hình ảnh tràn chiều dọc */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo, vừa khung */
+}
+
+
+/* Bên phải - chứa nội dung */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttonContainer .ant-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.buttonContainer .ant-btn:hover {
+    transform: scale(1.1);
+}
+
+.buttonContainer .ant-btn-primary {
+    background: #6a11cb;
+    border-color: #6a11cb;
+    color: #ffffff;
+}
+
+.buttonContainer .ant-btn-default {
+    background: transparent;
+    border: 2px solid #6a11cb;
+    color: #6a11cb;
+}
+
+.buttonContainer .ant-btn-default:hover {
+    background: #6a11cb;
+    color: #ffffff;
+}

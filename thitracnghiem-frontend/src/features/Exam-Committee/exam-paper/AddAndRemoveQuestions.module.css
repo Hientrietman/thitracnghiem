@@ -1,0 +1,22 @@
+.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Hoặc center nếu muốn căn giữa cả row */
+    gap: 16px; /* Khoảng cách giữa các phần tử */
+    margin-bottom: 16px; /* Tùy chỉnh khoảng cách với phần tử bên dưới */
+}
+
+.examPaperInput {
+    padding: 10px;
+    margin-right: 20px;
+
+    justify-content: center;
+    width: fit-content;
+}

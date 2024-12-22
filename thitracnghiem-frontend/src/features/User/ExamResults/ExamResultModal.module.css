@@ -1,0 +1,40 @@
+.closeButton {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.closeButton:hover {
+    background-color: #e6e6e6;
+}
+
+.passIcon {
+    color: #52c41a;
+    font-size: 48px;
+}
+
+.failIcon {
+    color: #ff4d4f;
+    font-size: 48px;
+}
+
+.performanceContainer {
+    margin-top: 16px;
+}
+
+.performanceDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.passText {
+    color: #52c41a;
+}
+
+.failText {
+    color: #ff4d4f;
+}

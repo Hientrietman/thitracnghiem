@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.topButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

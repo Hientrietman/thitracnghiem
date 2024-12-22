@@ -1,0 +1,83 @@
+/* Container */
+.dropdownContainer {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Profile Button */
+.profileButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdownOpen {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdownClose {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+/* Dropdown Items */
+.userInfo {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.dropdownItem {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdownItem:hover {
+    background-color: #f5f5f5;
+}
+
+/* Danger Item */
+.danger {
+    color: red;
+}
+
+.danger:hover {
+    background-color: #ffe6e6;
+}
+
+/* Divider */
+hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #eee;
+}

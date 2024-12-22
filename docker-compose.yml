@@ -1,0 +1,59 @@
+services:
+  frontend:
+    build:
+      context: ./thitracnghiem-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    env_file:
+      - ./thitracnghiem-frontend/.env
+    depends_on:
+      - backend
+    networks:
+      - app_network
+
+  backend:
+    build:
+      context: ./thitracnghiem-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./thitracnghiem-backend/.env
+    depends_on:
+      - redis
+    networks:
+      - app_network
+    volumes:
+      - ./uploads:/app/uploads
+
+  db:
+    image: postgres:16
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: thitracnghiemtest
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    depends_on:
+      - backend
+    networks:
+      - app_network
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  db_data:

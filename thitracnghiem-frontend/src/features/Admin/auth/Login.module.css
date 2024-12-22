@@ -1,0 +1,19 @@
+/* Login.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 300px;
+}
+
+.button {
+  width: fit-content;
+  align-self: center;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.subjectTitle {
+    font-size: 1.2rem;
+    color: #1890ff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.examDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.iconLabel strong {
+    color: rgba(0, 0, 0, 0.85);
+    margin-right: 5px;
+}
+
+.loadingContainer,
+.errorContainer,
+.emptyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.errorText {
+    color: #ff4d4f;
+}

@@ -1,0 +1,19 @@
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  width: auto; /* Bảng sẽ tự động co giãn theo nội dung */
+  min-width: 600px; /* Đặt chiều rộng tối thiểu nếu cần */
+  max-width: 100%; /* Giới hạn chiều rộng của bảng không vượt quá container */
+}
+
+ul {
+  padding-left: 20px;
+}
+
+h1 {
+  margin-bottom: 16px; /* Khoảng cách dưới tiêu đề */
+}

@@ -1,0 +1,28 @@
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Logo */
+.logo {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
